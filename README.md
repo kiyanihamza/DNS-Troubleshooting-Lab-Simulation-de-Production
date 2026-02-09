@@ -20,7 +20,7 @@ Le lab repose sur deux composants principaux isolés dans un réseau virtuel (`1
 ## 💻 Installation Rapide (WSL2 / Linux)
 ```bash
 git clone lien-de-dépôt
-cd dns-lab-production
+cd DNS-Troubleshooting-Lab-Simulation-de-Production
 ### 2. Lancer l'environnement
 ```bash
 docker compose up -d
