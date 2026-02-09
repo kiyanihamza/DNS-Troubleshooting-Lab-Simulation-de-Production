@@ -17,19 +17,15 @@ Le lab repose sur deux composants principaux isolés dans un réseau virtuel (`1
 
 
 
----
-
-## 🚀 Pourquoi ce Lab ?
-
-En production, la commande `dig +short` est un "annuaire téléphonique automatique". Chez des géants comme **Netflix**, des scripts similaires valident les configurations DNS avant chaque déploiement. 
-
-Le format `+short` offre une réponse épurée, idéale pour l'automatisation : c'est demander juste le numéro de téléphone sans les détails administratifs inutiles.
-
----
-
 ## 💻 Installation Rapide (WSL2 / Linux)
 
 ### 1. Cloner le dépôt
 ```bash
-git clone [https://github.com/votre-nom/dns-lab-production.git](https://github.com/votre-nom/dns-lab-production.git)
+git clone lien-de-dépôt
 cd dns-lab-production
+### 2. Lancer l'environnement
+```bash
+docker compose up -d
+### 3. Accéder à la machine de test
+```bash
+docker exec -it lab-ubuntu bash
