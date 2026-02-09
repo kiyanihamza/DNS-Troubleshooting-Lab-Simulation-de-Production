@@ -19,7 +19,7 @@ Le lab repose sur deux composants principaux isolés dans un réseau virtuel (`1
 
 ## 💻 Installation Rapide (WSL2 / Linux)
 ```bash
-git clone lien-de-dépôt
+git clone https://github.com/kiyanihamza/DNS-Troubleshooting-Lab-Simulation-de-Production.git
 cd DNS-Troubleshooting-Lab-Simulation-de-Production
 ### 2. Lancer l'environnement
 ```bash
