@@ -1,0 +1,28 @@
+services:
+  dns-server:
+    image: andyshinn/dnsmasq
+    container_name: dns-server
+    volumes:
+      - ./dnsmasq.conf:/etc/dnsmasq.conf
+    networks:
+      lab_net:
+        ipv4_address: 172.20.0.2
+
+  lab-ubuntu:
+    image: ubuntu:latest
+    container_name: lab-ubuntu
+    tty: true
+    stdin_open: true
+    networks:
+      lab_net:
+        ipv4_address: 172.20.0.6
+    dns:
+      - 172.20.0.2
+    command: >
+      sh -c "apt-get update && apt-get install -y dnsutils iputils-ping traceroute iproute2 && tail -f /dev/null"
+
+networks:
+  lab_net:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
