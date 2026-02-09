@@ -18,8 +18,6 @@ Le lab repose sur deux composants principaux isolés dans un réseau virtuel (`1
 
 
 ## 💻 Installation Rapide (WSL2 / Linux)
-
-### 1. Cloner le dépôt
 ```bash
 git clone lien-de-dépôt
 cd dns-lab-production
